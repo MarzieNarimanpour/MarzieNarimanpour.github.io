@@ -7,17 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marzi Narimanpour</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
     body {
       margin: 0;
       box-sizing: border-box;
+      font-family: sans-serif;
     }
 
     .container {
@@ -44,9 +40,7 @@
     }
 
     .left {
-      float: left;
       width: 180px;
-      margin: 0;
       padding: 1em;
     }
 
@@ -61,7 +55,6 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
     }
 
     li a {
@@ -88,8 +81,7 @@
       margin: 30px 0;
     }
 
-    td,
-    th {
+    td, th {
       border: 1px solid #dddddd;
       padding: 8px;
     }
@@ -106,10 +98,51 @@
     }
 
     .footer {
-      padding: 55px 20px;
+      padding: 20px;
       background-color: #2e3550;
       color: white;
       text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header h1 {
+        margin-bottom: 10px;
+      }
+
+      .left {
+        width: 100%;
+        float: none;
+        padding: 0;
+      }
+
+      .content {
+        margin-left: 0;
+        border-left: none;
+        padding: 1em;
+      }
+
+      table {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 24px;
+      }
+
+      li a {
+        padding: 8px 12px;
+      }
+
+      table {
+        font-size: 12px;
+      }
     }
   </style>
 </head>
@@ -126,7 +159,7 @@
     </header>
 
     <aside class="left">
-      <img src="./dori.jpg" width="160px" />
+      <img src="./dori.jpg" width="160px" alt="Dori">
       <ul>
         <li><a href="./CV.pdf">CV</a></li>
         <li><a href="./Merchandising.pdf">Visual Merchandising</a></li>
@@ -140,19 +173,16 @@
     </aside>
 
     <main class="content">
-
       <h2>About Me</h2>
       <p>I'm a creative and passionate Graduate in Cloth Design from Azad University of Tehran, Conception and innovation are the commonalities of all artists and designers.
         I'm Known for attributes, such as attention to detail, trend forecasting, and ability to work under pressure.
         I'm familiar with Clo3D, Adobe Illustrator, Marvelous Designer, Gemini and Sewing, and I am constantly staying up-to-date with the latest trends and technologies.
         As a fashion designer, I am committed to creating unique and innovative designs.</p>
       <h2>My Interest</h2>
-      <p> 	Visual Merchandising , Creative director , Stylist , Fashion & Textile Design</p>
+      <p>Visual Merchandising, Creative director, Stylist, Fashion & Textile Design</p>
       <h2>Portfolio</h2>
-      <!-- <a href="#">Projects</a> -->
-      <li><a href="/portfolio.pdf"> click for my Azadi Tower portfolio</a></li>
+      <li><a href="/portfolio.pdf">click for my Azadi Tower portfolio</a></li>
       <hr><br>
-      
       <table>
         <tr>
           <th>SKILL 1</th>
@@ -167,11 +197,9 @@
         <tr>
           <td>Sewing & Patterns</td>
           <td>Marketing</td>
-          <td>Adobe IIIustrator, Gemini , Clo3D</td>
+          <td>Adobe Illustrator, Gemini, Clo3D</td>
         </tr>
-        <tr>
       </table>
-   
     </main>
 
     <footer class="footer">&copy; Copyright Marzi</footer>
@@ -179,3 +207,4 @@
 </body>
 
 </html>
+
